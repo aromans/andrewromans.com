@@ -1,0 +1,20 @@
+- employer: "Air Force"
+  location: "Warner Robins, GA"
+  role: "Computer Scientist"
+  start: "Feb 2021"
+  end: "Present"
+  details:
+    - Led Artificial Intelligence efforts in the 577th of the DCGS.
+    - Responsible for advising and assisting other team projects on their AI and development efforts, helping teams accomplish their objectives.
+    - Advised in system architecture design and provided insights on best security practices through development.
+    - Worked on multi‑disciplinary machine learning projects, such as Natural Language Processing, Computer Vision, and Regression prediction.
+- employer: "Shadow Health"
+  location: "Gainesville, FL"
+  role: "Game Developer"
+  start: "Feb 2018"
+  end: "Feb 2021"
+  details:
+    - Led the development of multiple high‑fidelity 3D simulations for nursing colleges in over 1,800 programs worldwide.
+    - Developed in‑house tools for interdisciplinary teams that helped increase team production and streamlined designer workflow.
+    - Chaired meetings for maintaining and discussing code and system infrastructure for older and newer simulations.
+    - Collaborated with large cross‑interdisciplinary teams to communicate, build, and maintain features.

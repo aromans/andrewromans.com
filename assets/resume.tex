@@ -1,0 +1,233 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Andrew}{Romans}
+% \position{Computer Scientist{\enskip\cdotp\enskip}Security Expert}
+\address{Warner Robins, GA}
+
+\email{andrew.romans@hotmail.com}
+
+\homepage{andrewromans.com}
+
+\github{aromans}
+
+\linkedin{andrew-romans}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Andrew Romans~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvparagraph}
+
+%---------------------------------------------------------
+Experienced Software Engineer with a passion and focus in Cyber Security, transitioning from a Machine Learning and Simulation background. Proficient in many languages, from C and x86 assembly to Python. Spends free time participating in CTFs, pwning challenges in TryHackMe and HackTheBox, and staying up-to-date with techniques on malware analysis, reverse engineering, and recent cyber threats.
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Computer Scientist} % Job title
+    {Air Force} % Organization
+    {Warner Robins, GA} % Location
+    {Feb. 2021 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Led Artificial Intelligence efforts in the 577th of the DCGS.}
+        \item {Responsible for advising and assisting other team projects on their AI and development efforts, helping teams accomplish their objectives.}
+        \item {Advised in system architecture design and provided insights on best security practices through development.}
+        \item {Worked on multi-disciplinary machine learning projects, such as Natural Language Processing, Computer Vision, and Regression prediction.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Game Developer} % Job title
+    {Shadow Health} % Organization
+    {Gainesville, FL} % Location
+    {Jan. 2018 - Jun. 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Led the development of multiple high-fidelity 3D simulations for nursing colleges in over 1,800 programs worldwide.}
+        \item {Developed in-house tools for interdisciplinary teams that helped increase team production and streamlined designer workflow.}
+        \item {Chaired meetings for maintaining and discussing code and system infrastructure for older and newer simulations.}
+        \item {Collaborated with large cross-interdisciplinary teams to communicate, build, and maintain features.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Certifications}
+
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+% \cvsubsection{International}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {Security+} % Award
+    {Credential ID: TKRMB8EYJFBE1X9G} % Event
+    {CompTIA} % Location
+    {Aug 2022} % Date(s)
+
+%---------------------------------------------------------
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {M.S. in Cybersecurity} % Degree
+    {Georgia Institute of Technology} % Institution
+    {Atlanta, GA} % Location
+    {Jan. 2019 - Present} % Date(s)
+    {
+    }
+
+%--------------------------------------------------------
+  \cventry
+    {B.S. in Computer Game Design and Development} % Degree
+    {Kennesaw State University} % Institution
+    {Kennesaw, GA} % Location
+    {Aug. 2013 - May. 2017} % Date(s)
+    {
+    }
+
+%----------------------------------------------------------
+\end{cventries}
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Security Clearance}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvclearances}
+    
+%---------------------------------------------------------
+  \cvclearance
+    {TS/SCI} % Clearance
+    {Feb. 2021 - Present} % Date(s)
+
+%---------------------------------------------------------
+\end{cvclearances}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

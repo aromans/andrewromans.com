@@ -1,0 +1,20 @@
+<header id="header">
+	<a href="/">
+		<div id="title">
+			<h1>
+				{{ .Site.Title }}
+			</h1>
+		</div>
+	</a>
+	<div id="nav">
+	<ul>
+		{{ range $name, $link := .Site.Params.Links }}
+		<li>
+			<a href="{{ $link }}">
+				{{ $name }}
+			</a>
+		</li>
+		{{ end }}
+	</ul>
+	</div>
+</header>

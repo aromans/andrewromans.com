@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{- partial "about.html" . -}}
+	<section id="writing">
+	<span class="h1">
+		<a href="/posts">Writeups</a>
+	</span>
+	{{ $pages := .Site.RegularPages }}
+	{{ range $pages }}
+		{{ $title := .Title }}
+		{{ $summary := .Summary }}
+		<ul class="post-list">
+			<li class="post-item">
+				<div class="meta">
+					<time datetime="{{ .PublishDate }}">{{ .PublishDate.Format "01-02-2006" }}</time>
+				</div>
+				<span>
+					<a href="{{ .RelPermalink }}">{{ $title }}</a>
+				</span>
+                        	{{ $link := .Params.topic }}
+                        	<div id="main-topic">
+                                	<img src="/imgs/{{$link}}.svg"></img>
+                        	</div>
+			</li>
+		</ul>
+	{{ end }}
+	</section>
+{{ end }}

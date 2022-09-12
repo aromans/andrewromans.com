@@ -1,0 +1,14 @@
+<div class="footer-right">
+	<nav>
+		<ul>
+		{{ range $key, $val := .Site.Social }}
+			<li>
+				<a class="icon" target="_blank" rel="noopener" href="{{ $val }}">
+					{{ $icon := printf "<i data-feather=\"%s\"></i> " $key | safeHTML }}
+					{{ $icon }}
+				</a>
+			</li>	
+		{{ end }}
+		</ul>
+	</nav>
+</div>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div id="archive">
+	    <ul class="post-list">
+		{{ range .Data.Pages.GroupByDate "2006" }}
+    	    	<h2>{{ .Key }}</h2>
+		{{ range .Pages }}
+		<li class="post-item">
+			<div class="meta">
+				<time datetime="{{ .PublishDate }}">
+					{{ .PublishDate.Format "01-02-2006" }}
+				</time>
+			</div>
+			<span>
+				<a href="{{ .RelPermalink }}">
+					{{ .Title }}
+				</a>
+			</span>
+                        {{ $link := .Params.topic }}
+                        <div id="main-topic">
+                                <img src="/imgs/{{$link}}.svg"></img>
+                        </div>
+		</li>
+		{{ end }}
+		{{ end }}
+	    </ul>
+</div>
+{{ end }}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="max-width-3 mx-auto px3 ltr">
+        <div class="content index py4">
+		{{- partial "profile.html" . -}}
+		{{- block "main" . }}{{- end }}
+		{{- partial "footer.html" . -}}
+	</div>
+	{{- partial "script.html" . -}}
+    </body>
+</html>

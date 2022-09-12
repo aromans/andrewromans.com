@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="post" itemscope="">
+	<div class="content" itemprop="articleBody">
+	<div id="categories">
+	<div class="category-list">
+	{{ $data := .Data }}
+	{{ range $key, $value := .Data.Terms.ByCount }}
+	<ul class="category-list">
+		{{ if ($value.Name) }}
+		<li class="category-list-item">
+			<a class="category-list-link" href="{{ "tags/" | relURL }}{{ $value.Name | urlize }}">
+				{{ $value.Name }}
+			</a>
+			<span class="category-list-count">{{ $value.Count }}</span>
+		</li>
+		{{ end }}
+	</ul>
+	{{ end }}
+	</div>
+	</div>
+	</div>
+</article>
+{{ end }}

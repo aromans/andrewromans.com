@@ -1,0 +1,249 @@
+* {
+  background-color: #342e38;
+}
+
+.wrap {
+   width: 80%;
+   flex: 1 0 auto;
+   margin: 0 auto;
+   margin-top: 5em;
+}
+
+.resume {
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  hr {
+    clear: both;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+
+    .message {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1s;
+      width: 10em;
+      background-color: #3d3d3d;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5em;
+
+      font-size: 50%;
+    }
+
+    .message::after {
+      content: " ";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      margin-width: 5px;
+      border-style: solid;
+      border-color: #3d3d3d transparent transparent transparent;
+    }
+  }
+
+  .tooltip:hover .message {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .header {
+    color: #c9cacc;
+  }
+
+  .header:first-letter {
+    color: #8938e0; //rgb(182,38,44);
+  }
+
+  // This is a dumb solution, tbh
+  .header .left:first-letter {
+    color: #8938e0; //rgb(182,38,44);
+  }
+
+  .intro {
+
+    text-align: center;
+
+    .name {
+      font-family: Roboto, sans-serif;
+      font-weight: 100;
+      font-size: 2.2rem;
+      margin: 0.2em auto;
+      color: white;
+
+      b {
+        font-weight: bold;
+      }
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      .name {
+        color: #c9cacc;
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: rgb(182,38,44);
+      //margin: 0.4em auto;
+    }
+
+    .location {
+      font-weight: bold;
+      font-size: 0.5rem;
+      text-transform: uppercase;
+      color: white;
+      margin: 0.2em auto;
+    }
+
+    .contacts {
+      font-size: 0.7rem;
+      margin: 0.4em auto;
+      a {
+        color: white;
+      }
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      .location {
+        color: #c9cacc;//#4f515d;
+      }
+      .contacts a {
+        color: #c9cacc;
+      }
+    }
+
+    @media only screen and (min-width: 720px) {
+      .name {
+        font-size: 2.6rem;
+      }
+      .title {
+        font-size: 0.8rem;
+      }
+      .location {
+        font-size: 0.6rem;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .name {
+        font-size: 2.7rem;
+      }
+      .title {
+        font-size: 0.9rem;
+      }
+      .location {
+        font-size: 0.7rem;
+      }
+    }
+
+  }
+
+  .summary {
+
+    margin: 1em auto;
+    color: #c9cacc;
+    p {
+      margin: -1em 0em auto;
+      font-size: 1rem;
+    }
+
+  }
+
+  .experiences, .projects, .education {
+
+    margin: 1em auto;
+
+    .experience {
+
+      margin: 0.4em auto;
+      font-size: 1rem;
+
+      .row {
+        clear: both;
+      }
+
+      .employer {
+        font-weight: bold;
+        float: left;
+      }
+
+      color: #c9cacc;
+
+      .location {
+        float: right;
+        color: #8938e0;//rgb(182,38,44);
+        font-weight: 300;
+      }
+
+      .role {
+        float: left;
+        font-size: 0.8em;
+      }
+
+      .dates {
+        float: right;
+        font-size: 0.8em;
+      }
+
+      li {
+        list-style-position: inside;
+        font-size: 0.8em;
+      }
+
+    }
+
+  }
+
+  .certifications {
+
+    margin: 1em auto;
+
+    hr {
+      margin-bottom: 0.5em;
+    }
+
+    .row {
+      clear: both;
+    }
+
+    .date, .description {
+      float: left;
+      margin-right: 1em;
+    }
+
+    .org {
+      color: #8938e0;//rgb(182,38,44);
+      float: right;
+    }
+    color: #c9cacc;
+  }
+
+  .clearances {
+    margin: 1em auto;
+    color: #c9cacc;
+    .row {
+      clear: both;
+    }
+  }
+
+}
