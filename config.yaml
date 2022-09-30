@@ -4,7 +4,9 @@ title: Andrew Romans
 theme: simple
 
 params:
-  status: I am currently Reverse Engineering and Exploiting Binaries in the CS6265:InfoSecLab class at GaTech. This course covers reverse engineering, exploitation, binary analysis, and web topics while providing 11 to 12 challenges in a CTF format every week for the whole semester. Once this class is complete, I will be able to catch up on writing my solved challenge WriteUps  and training for the PNPT Certification. 
+  status: I am currently Reverse Engineering and Exploiting Binaries in the CS6265:InfoSecLab class at GaTech. This course covers reverse engineering, exploitation, binary analysis, and web topics while providing 11 to 12 challenges in a CTF format every week for the whole semester. 
+
+  status_p2: On the side, I have finished 8/9 of the NSA Codebreaker Challenges and am slowly juggling Task 9 while working on the class challenges. Once this class is complete, I will be able to catch up on writing my baclog WriteUps and training for the PNPT Certification.
   timeline: 
     current: "CS6265: InfoSec Lab (Binary Exploitation)"
     next_1: PNPT Certification Study/Training
