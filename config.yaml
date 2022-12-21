@@ -4,7 +4,7 @@ title: Andrew Romans
 theme: simple
 
 params:
-  status: I finished my RE and Binary Exploitation class at GaTech in 6th place; my next class in my Masters will be in Network Security. Additionally, I have some new opportunities coming around the horizon that I am very much excited for, but will need to remain a secret... for now! 
+  status: I finished my RE and Binary Exploitation class at GaTech in 6th place; my next class in my Masters will be in Network Security. Additionally, I have some new opportunities coming around the horizon that I am very much excited for!
   status_p2: In the meantime, I was able to finally finish Task 9 in the NSA Codebreaker Challenge which makes me a Solver! If you are interested in my writeups, they should be available for reading below. Currently, I am participating in Kringlecon 2022, TryHackMe's Advent of Cyber 4, and studying for Cysa+ and PNPT.
   timeline: 
     current: "CS6265: InfoSec Lab (Binary Exploitation)"
