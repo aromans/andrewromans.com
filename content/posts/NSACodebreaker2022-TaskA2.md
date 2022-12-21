@@ -2,10 +2,9 @@
 title: "NSACodebreaker2022 - TaskA2"
 topic: "general"
 tags: ["computer-forensics", "packet-analysis"]
-prev: "http://localhost:1313/posts/nsacodebreaker2022-taska1"
-next: "http://localhost:1313/posts/nsacodebreaker2022-taskb1"
+prev: "http://andrewromans.com/posts/nsacodebreaker2022-taska1"
+next: "http://andrewromans.com/posts/nsacodebreaker2022-taskb1"
 date: 2022-12-20T11:37:37-05:01
-draft: true
 ---
 
 # Table of Contents

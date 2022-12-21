@@ -2,10 +2,9 @@
 title: "NSACodebreaker2022 - Task5"
 topic: "general"
 tags: ["reverse-engineering", "cryptography"]
-prev: "http://localhost:1313/posts/nsacodebreaker2022-taskb2"
-next: "http://localhost:1313/posts/nsacodebreaker2022-task6"
+prev: "http://andrewromans.com/posts/nsacodebreaker2022-taskb2"
+next: "http://andrewromans.com/posts/nsacodebreaker2022-task6"
 date: 2022-12-20T11:37:37-05:04
-draft: true
 ---
 
 # Table of Contents
