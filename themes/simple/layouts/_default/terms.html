@@ -8,7 +8,7 @@
 	<ul class="category-list">
 		{{ if ($value.Name) }}
 		<li class="category-list-item">
-			<a class="category-list-link" href="{{ "tags/" | relURL }}{{ $value.Name | urlize }}">
+			<a class="category-list-link" href={{ "tags/" | relURL }}{{ $value.Name | urlize }}>
 				{{ $value.Name }}
 			</a>
 			<span class="category-list-count">{{ $value.Count }}</span>
