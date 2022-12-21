@@ -8,16 +8,16 @@ date: 2022-12-20T11:37:37-05:06
 ---
 
 # Table of Contents
-1. [Task A1](http://localhost:1313/posts/nsacodebreaker2022-taska1)
-2. [Task A2](http://localhost:1313/posts/nsacodebreaker2022-taska2)
-3. [Task B1](http://localhost:1313/posts/nsacodebreaker2022-taskb1/)
-4. [Task B2](http://localhost:1313/posts/nsacodebreaker2022-taskb2/)
-5. [Task 5](http://localhost:1313/posts/nsacodebreaker2022-task5/)
-6. [Task 6](http://localhost:1313/posts/nsacodebreaker2022-task6/)
+1. [Task A1](http://andrewromans.com/posts/nsacodebreaker2022-taska1)
+2. [Task A2](http://andrewromans.com/posts/nsacodebreaker2022-taska2)
+3. [Task B1](http://andrewromans.com/posts/nsacodebreaker2022-taskb1/)
+4. [Task B2](http://andrewromans.com/posts/nsacodebreaker2022-taskb2/)
+5. [Task 5](http://andrewromans.com/posts/nsacodebreaker2022-task5/)
+6. [Task 6](http://andrewromans.com/posts/nsacodebreaker2022-task6/)
 7. [Task 7](#task-7)
 	- [Solution](#solution)
-8. [Task 8](http://localhost:1313/posts/nsacodebreaker2022-task8/)
-9. [Task 9](http://localhost:1313/posts/nsacodebreaker2022-task9/)
+8. [Task 8](http://andrewromans.com/posts/nsacodebreaker2022-task8/)
+9. [Task 9](http://andrewromans.com/posts/nsacodebreaker2022-task9/)
 
 ## Task 7
 
