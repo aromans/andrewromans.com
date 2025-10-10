@@ -1,5 +1,5 @@
 ---
-location: "Warner Robins, GA"
+location: "Carlsbad, CA"
 ---
 
-Experienced Software Engineer with a passion and focus in Cyber Security, transitioning from a Machine Learning and Simulation background. Proficient in many languages, from C and x86 assembly to Python. Spends free time participating in CTFs, pwning challenges in TryHackMe and HackTheBox, and staying up‑to‑date with techniques on malware analysis, reverse engineering, and emerging cyber threats.
+Security Engineer and Vulnerability Researcher specializing in Reverse Engineering and Malware Analysis, with nearly 3 years of professional experience in cybersecurity. Day-to-day expertise includes advanced malware analysis, penetration testing, and vulnerability research across diverse systems and architectures. Proficient in low-level languages including C, x86, arm, and mips, with continued passion for competitive CTFs and staying current with emerging threats and exploitation techniques.

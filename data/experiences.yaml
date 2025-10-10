@@ -1,8 +1,13 @@
+- employer: "Viasat"
+  location: "Carlsbad, CA"
+  role: "Vulnerability Researcher & Security Engineer"
+  start: "Jan 2023"
+  end: "Present"
 - employer: "Air Force"
   location: "Warner Robins, GA"
   role: "Computer Scientist"
   start: "Feb 2021"
-  end: "Present"
+  end: "Jan 2023"
   details:
     - Spearheaded Artificial Intelligence efforts in the 577th of the DCGS.
     - Advised and assisted teams on their AI and development efforts, helping teams accomplish their objectives.
