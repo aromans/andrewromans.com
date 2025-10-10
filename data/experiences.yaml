@@ -4,7 +4,10 @@
   start: "Jan 2023"
   end: "Present"
   details:
-    - For more details, feel free to contact me through email.
+    - Conduct in-depth malware analysis and reverse engineering of sophisticated threats, dissecting binaries to identify exploitation techniques, command-and-control mechanisms, and indicators of compromise.
+    - Perform vulnerability research and penetration testing across network infrastructure, embedded systems, and applications.
+    - Leverage low-level debugging, disassembly (IDA Pro/Ghidra), and dynamic analysis tools to reverse engineer malicious code or for vulnerability research.
+    - For more information or inquiries, please reach out via email.
 - employer: "Air Force"
   location: "Warner Robins, GA"
   role: "Computer Scientist"
