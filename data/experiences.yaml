@@ -3,6 +3,8 @@
   role: "Vulnerability Researcher & Security Engineer"
   start: "Jan 2023"
   end: "Present"
+  details:
+    - For more details, feel free to contact me through email.
 - employer: "Air Force"
   location: "Warner Robins, GA"
   role: "Computer Scientist"

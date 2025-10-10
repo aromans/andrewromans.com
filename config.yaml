@@ -4,8 +4,8 @@ title: Andrew Romans
 theme: simple
 
 params:
-  status: I finished my RE and Binary Exploitation class at GaTech in 6th place; my next class in my Masters will be in Network Security. Additionally, I have some new opportunities coming around the horizon that I am very much excited for!
-  status_p2: In the meantime, I was able to finally finish Task 9 in the NSA Codebreaker Challenge which makes me a Solver! If you are interested in my writeups, they should be available for reading below. Currently, I am participating in Kringlecon 2022, TryHackMe's Advent of Cyber 4, and studying for Cysa+ and PNPT.
+  status: Just placed top 100 in Flare-On 12! It is an amazing competition, with amazing RE challenges! Follow the link if your interested - https://flare-on12.ctfd.io/ 
+  status_p2: Come back after October 24th for my writeups on all 9!
   timeline: 
     current: "CS6265: InfoSec Lab (Binary Exploitation)"
     next_1: PNPT Certification Study/Training
@@ -28,6 +28,6 @@ params:
   profile:
     firstname: Andrew
     lastname: Romans
-    location: Warner Robins, GA
+    location: Carlsbad, CA
     bio: Security Engineer and Vulnerability Researcher specializing in Reverse Engineering and Malware Analysis, with nearly 3 years of professional experience in cybersecurity. Day-to-day expertise includes advanced malware analysis, penetration testing, and vulnerability research across diverse systems and architectures. Proficient in low-level languages including C, x86, arm, and mips, with continued passion for competitive CTFs and staying current with emerging threats and exploitation techniques.
   about: Welcome! This website hosts everything from my CV/Contact Information to CTF challenge writeups, Malware Analysis, and more.  💻👋
