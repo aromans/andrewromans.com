@@ -11,7 +11,9 @@
 {{ with .Site.Params.meta.keywords }}
     <meta name="keywords" content="{{ . }}" />
 {{ end }}-->
-    <base href="{{ .Site.BaseURL }}">
+    <!-- No <base href> on purpose: every URL on this page is root-relative, so
+         they resolve against whatever origin serves it. Hardcoding the production
+         base breaks local preview by pulling assets from the live site. -->
     <title>{{ .Site.Title }}</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
@@ -138,30 +140,17 @@
           {{ end }}
             </ul>
           </div>
+          {{ with .note }}
+          <div class="row">
+            <p class="note"><em>{{ . }}</em></p>
+          </div>
+          {{ end }}
         </div>
         {{- end }}
       </section>
 
-      <!-- <section class="certifications">
-        <h2 class="header">Certifications</h2><hr >
-
-        <div class="certlist">
-          {{ range .Site.Data.certifications }}
-          <div class="row">
-            <div class="date">{{ .date }}</div>
-            <div class="description">
-              <strong>{{ .name }}</strong>
-              , Credential ID: {{ .id }}
-            </div>
-            <div class="org">{{ .org }}</div>
-          </div>
-          {{ end }}<br/>
-        </div>
-      </section> -->
-
-      <!--
       <section class="projects">
-        <h2 class="header">Notable Projects</h2><hr>
+        <h2 class="header">Projects</h2><hr>
 
         {{ range .Site.Data.projects }}
         <div class="experience">
@@ -172,13 +161,47 @@
           <div class="row">
             <div class="role">{{ .role }}</div>
             <div class="dates">{{ .tools }}</div>
-          </div><br/>
+          </div>
           <div class="row">
-            <p>{{ .description }}</p>
+            <ul>
+          {{ range .details }}
+              <li>{{ . }}</li>
+          {{ end }}
+            </ul>
           </div>
         </div>
         {{- end }}
-      </section>-->
+      </section>
+
+      <section class="certifications awards">
+        <h2 class="header">CTF &amp; Recognition</h2><hr>
+
+        <div class="certlist">
+          {{ range .Site.Data.awards }}
+          <div class="row">
+            <div class="date">{{ .date }}</div>
+            <div class="description">
+              <strong>{{ .name }}</strong>{{ with .detail }} — {{ . }}{{ end }}
+            </div>
+            <div class="org">{{ .org }}</div>
+          </div>
+          {{ end }}<br/>
+        </div>
+      </section>
+
+      <section class="certifications skills">
+        <h2 class="header">Technical Skills</h2><hr>
+
+        <div class="certlist">
+          {{ range .Site.Data.skills }}
+          <div class="row">
+            <div class="description">
+              <strong>{{ .category }}</strong> — {{ .items }}
+            </div>
+          </div>
+          {{ end }}<br/>
+        </div>
+      </section>
 
       <section class="education">
         <h2 class="header">Education</h2><hr>
@@ -193,6 +216,11 @@
             <div class="role">{{ .degree }}</div>
             <div class="dates">{{ .start }} - {{ .end }}</div>
           </div>
+          {{ with .note }}
+          <div class="row">
+            <p class="note"><em>{{ . }}</em></p>
+          </div>
+          {{ end }}
         </div><br/>
         {{- end }}
       </section>

@@ -2,8 +2,8 @@
 title: "NSACodebreaker2022 - TaskB1"
 topic: "general"
 tags: ["reverse-engineering", "web-analysis"]
-prev: "http://andrewromans.com/posts/nsacodebreaker2022-taska2"
-next: "http://andrewromans.com/posts/nsacodebreaker2022-taskb2"
+prev: "/posts/nsacodebreaker2022-taska2/"
+next: "/posts/nsacodebreaker2022-taskb2/"
 date: 2022-12-20T11:37:37-05:02
 ---
 

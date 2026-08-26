@@ -1,16 +1,28 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
+%
+% GENERATED FILE -- do not edit this copy by hand.
+%
+% This is a Hugo template. Content comes from:
+%   content/resume/_index.md   -> Summary
+%   data/experiences.yaml      -> Work Experience
+%   data/projects.yaml         -> Projects
+%   data/awards.yaml           -> CTF & Recognition
+%   data/skills.yaml           -> Technical Skills
+%   data/education.yaml        -> Education
+%   data/clearances.yaml       -> Security Clearance
+%
+% To produce a compilable .tex: build the site, then take public/resume.tex
+% (or use the "Download LaTex" button on /resume). Compile that in Overleaf
+% alongside awesome-cv.cls and fonts/, then drop the PDF at content/resume.pdf.
+%
+% LaTeX escaping of YAML content is handled by layouts/partials/texesc.html;
+% markdown links in `link:` fields are converted by layouts/partials/texlink.html.
+%
 % Awesome CV LaTeX Template for CV/Resume
-%
-% This template has been downloaded from:
 % https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+% Author: Claud D. Park <posquit0.bj@gmail.com>
+% Template license: CC BY-SA 4.0
 %
 
 
@@ -46,36 +58,29 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% Keep section headers from being orphaned at the bottom of a page. Wraps
+% awesome-cv's \cvsection rather than redefining it, so it survives class
+% updates. If a header plus this much space won't fit, the header moves to the
+% next page instead of stranding itself. Raise the multiplier if a header still
+% lands alone; lower it if it pushes breaks too eagerly.
+\usepackage{needspace}
+\let\acvOldCvSection\cvsection
+\renewcommand{\cvsection}[1]{\needspace{5\baselineskip}\acvOldCvSection{#1}}
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
 \name{Andrew}{Romans}
-% \position{Computer Scientist{\enskip\cdotp\enskip}Security Expert}
-\address{Carlsbad, CA}
+\address{ {{- partial "texesc.html" .Site.Params.profile.location -}} }
 
-\email{andrewromans@proton.me}
+\email{ {{- partial "texesc.html" .Site.Params.contacts.email -}} }
 
-\homepage{andrewromans.com}
+\homepage{ {{- replaceRE "^https?://|/$" "" .Site.BaseURL -}} }
 
-\github{aromans}
+\github{ {{- .Site.Params.contacts.github -}} }
 
-\linkedin{andrew-romans}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
-
-% \quote{``Be the change that you want to see in the world."}
+\linkedin{ {{- .Site.Params.contacts.linkedin -}} }
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -85,7 +90,6 @@
 \makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
   {Andrew Romans~~~·~~~Résumé}
@@ -93,162 +97,123 @@
 
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
+%	SUMMARY
 %-------------------------------------------------------------------------------
 \cvsection{Summary}
 
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
 \begin{cvparagraph}
-
-%---------------------------------------------------------
-Security Engineer and Vulnerability Researcher specializing in Reverse Engineering and Malware Analysis, with nearly 3 years of professional experience in cybersecurity. Day-to-day expertise includes advanced malware analysis, penetration testing, and vulnerability research across diverse systems and architectures. Proficient in low-level languages including C, x86, arm, and mips, with continued passion for competitive CTFs and staying current with emerging threats and exploitation techniques.
+{{ partial "texesc.html" (trim .RawContent "\n ") }}
 \end{cvparagraph}
 
 %-------------------------------------------------------------------------------
-%	SECTION TITLE
+%	WORK EXPERIENCE
 %-------------------------------------------------------------------------------
 \cvsection{Work Experience}
 
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
 \begin{cventries}
-  %---------------------------------------------------------
+{{ range .Site.Data.experiences }}
   \cventry
-    {Vulnerability Researcher and Security Engineer} % Job title
-    {Viasat} % Organization
-    {Carlsbad, CA} % Location
-    {Jan. 2023 - Present} % Date(s)
+    { {{- partial "texesc.html" .role -}} }
+    { {{- partial "texesc.html" .employer -}} }
+    { {{- partial "texesc.html" .location -}} }
+    { {{- partial "texesc.html" .start }} - {{ partial "texesc.html" .end -}} }
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conduct in-depth malware analysis and reverse engineering of sophisticated threats.}
-        \item {Perform vulnerability research and penetration testing across network infrastructure, embedded systems, and applications.}
-        \item {Leverage low-level debugging, disassembly (IDA Pro/Ghidra/BinaryNinja), and dynamic analysis tools (AFL++/Unicorn/Angr) for vulnerability research or malware analysis.}
-        \item {For more information or inquiries, please reach out via email.}
+      \begin{cvitems}
+      {{- range .details }}
+        \item { {{- partial "texesc.html" . -}} }
+      {{- end }}
+      {{- with .note }}
+        \item { \textit{ {{- partial "texesc.html" . -}} } }
+      {{- end }}
       \end{cvitems}
     }
-
-%---------------------------------------------------------
-  \cventry
-    {Computer Scientist} % Job title
-    {Air Force} % Organization
-    {Warner Robins, GA} % Location
-    {Feb. 2021 - Jan. 2023} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Spearheaded Artificial Intelligence efforts in the 577th of the DCGS.}
-        \item {Advised and assisted teams on their AI and development efforts, helping teams accomplish their objectives.}
-        \item {Designed team CI/CD system architecture and provided insights on best security practices throughout development.}
-        \item {Worked on multi-disciplinary machine learning projects, such as Natural Language Processing, Computer Vision, and Regression prediction.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Game Developer} % Job title
-    {Shadow Health} % Organization
-    {Gainesville, FL} % Location
-    {Feb. 2018 - Feb. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Orchestrated the development of multiple high-fidelity 3D simulations for nursing colleges in over 1,800 programs worldwide.}
-        \item {Developed in-house tools for interdisciplinary teams that helped increase team production and streamlined designer workflow.}
-        \item {Chaired meetings for maintaining and discussing code and system infrastructure for older and newer simulations.}
-        \item {Collaborated with large cross-interdisciplinary teams to communicate, build, and maintain features.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
+{{ end }}
 \end{cventries}
 
 %-------------------------------------------------------------------------------
-%	SECTION TITLE
+%	PROJECTS
 %-------------------------------------------------------------------------------
-% \cvsection{Certifications}
+\cvsection{Projects}
 
-
-%-------------------------------------------------------------------------------
-%	SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-% \cvsubsection{International}
-
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
-% \begin{cvhonors}
-
-%---------------------------------------------------------
-  % \cvhonor
-  %   {Security+} % Award
-  %   {Credential ID: TKRMB8EYJFBE1X9G} % Event
-  %   {CompTIA} % Location
-  %   {July 2022} % Date(s)
-
-%---------------------------------------------------------
-% \end{cvhonors}
+\begin{cventries}
+{{ range .Site.Data.projects }}
+  \cventry
+    { {{- partial "texesc.html" .role -}} }
+    { {{- partial "texesc.html" .name -}} }
+    { {{- partial "texlink.html" .link -}} }
+    { {{- partial "texesc.html" .tools -}} }
+    {
+      \begin{cvitems}
+      {{- range .details }}
+        \item { {{- partial "texesc.html" . -}} }
+      {{- end }}
+      \end{cvitems}
+    }
+{{ end }}
+\end{cventries}
 
 %-------------------------------------------------------------------------------
-%	SECTION TITLE
+%	CTF & RECOGNITION
+%-------------------------------------------------------------------------------
+\cvsection{CTF \& Recognition}
+
+\begin{cvhonors}
+{{ range .Site.Data.awards }}
+  \cvhonor
+    { {{- partial "texesc.html" .name -}} }
+    { {{- partial "texesc.html" .detail -}} }
+    { {{- partial "texesc.html" .org -}} }
+    { {{- partial "texesc.html" .date -}} }
+{{ end }}
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+{{ range .Site.Data.skills }}
+  \cvskill
+    { {{- partial "texesc.html" .category -}} }
+    { {{- partial "texesc.html" .items -}} }
+{{ end }}
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION
 %-------------------------------------------------------------------------------
 \cvsection{Education}
 
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
 \begin{cventries}
-
-%---------------------------------------------------------
+{{ range .Site.Data.education }}
   \cventry
-    {M.S. in Cybersecurity} % Degree
-    {Georgia Institute of Technology} % Institution
-    {Atlanta, GA} % Location
-    {Jan. 2019 - May. 2026} % Date(s)
+    { {{- partial "texesc.html" .degree -}} }
+    { {{- partial "texesc.html" .university -}} }
+    { {{- partial "texesc.html" .location -}} }
+    { {{- partial "texesc.html" .start }} - {{ partial "texesc.html" .end -}} }
     {
+    {{- with .note }}
+      \begin{cvitems}
+        \item { {{- partial "texesc.html" . -}} }
+      \end{cvitems}
+    {{- end }}
     }
-
-%--------------------------------------------------------
-  \cventry
-    {B.S. in Computer Game Design and Development} % Degree
-    {Kennesaw State University} % Institution
-    {Kennesaw, GA} % Location
-    {Aug. 2013 - May. 2017} % Date(s)
-    {
-    }
-
-%----------------------------------------------------------
+{{ end }}
 \end{cventries}
 
 %-------------------------------------------------------------------------------
-%	SECTION TITLE
+%	SECURITY CLEARANCE
 %-------------------------------------------------------------------------------
 \cvsection{Security Clearance}
 
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
 \begin{cvclearances}
-    
-%---------------------------------------------------------
+{{ range .Site.Data.clearances }}
   \cvclearance
-    {TS/SCI} % Clearance
-    {Feb. 2021 - Present} % Date(s)
-
-%---------------------------------------------------------
+    { {{- partial "texesc.html" .name -}} }
+    { {{- partial "texesc.html" .start }} - {{ partial "texesc.html" .end -}} }
+{{ end }}
 \end{cvclearances}
-
-% \input{resume/presentation.tex}
-% \input{resume/writing.tex}
-% \input{resume/extracurricular.tex}
-
 
 %-------------------------------------------------------------------------------
 \end{document}

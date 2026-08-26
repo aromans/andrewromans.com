@@ -2,7 +2,8 @@
 title: "NSACodebreaker2022 - TaskA1"
 topic: "general"
 tags: ["log-analysis"]
-next: "http://andrewromans.com/posts/nsacodebreaker2022-taska2"
+prev: "/posts/flare-on-12/"
+next: "/posts/nsacodebreaker2022-taska2/"
 date: 2022-12-20T11:37:37-05:00
 ---
 

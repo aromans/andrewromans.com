@@ -2,8 +2,8 @@
 title: "NSACodebreaker2022 - Task7"
 topic: "general"
 tags: ["web-hacking", "sql-injection"]
-prev: "http://andrewromans.com/posts/nsacodebreaker2022-task6"
-next: "http://andrewromans.com/posts/nsacodebreaker2022-task8"
+prev: "/posts/nsacodebreaker2022-task6/"
+next: "/posts/nsacodebreaker2022-task8/"
 date: 2022-12-20T11:37:37-05:06
 ---
 

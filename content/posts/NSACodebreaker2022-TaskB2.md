@@ -2,8 +2,8 @@
 title: "NSACodebreaker2022 - TaskB2"
 topic: "general"
 tags: ["web-hacking", "git-hacking"]
-prev: "http://andrewromans.com/posts/nsacodebreaker2022-taskb1"
-next: "http://andrewromans.com/posts/nsacodebreaker2022-task5"
+prev: "/posts/nsacodebreaker2022-taskb1/"
+next: "/posts/nsacodebreaker2022-task5/"
 date: 2022-12-20T11:37:37-05:03
 ---
 

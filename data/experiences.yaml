@@ -6,18 +6,20 @@
   details:
     - Conduct in-depth malware analysis and reverse engineering of sophisticated threats, dissecting binaries to identify exploitation techniques, command-and-control mechanisms, and indicators of compromise.
     - Perform vulnerability research and penetration testing across network infrastructure, embedded systems, and applications.
-    - Leverage low-level debugging, disassembly (IDA Pro/Ghidra), and dynamic analysis tools to reverse engineer malicious code or for vulnerability research.
-    - For more information or inquiries, please reach out via email.
+    - Leverage low-level debugging, disassembly (IDA Pro, Ghidra, Binary Ninja), and dynamic analysis and emulation tooling (AFL++, Unicorn, angr) for vulnerability research and malware analysis.
+  note: "Much of this work is non-public; happy to discuss scope and methodology directly."
+
 - employer: "Air Force"
   location: "Warner Robins, GA"
   role: "Computer Scientist"
   start: "Feb 2021"
   end: "Jan 2023"
   details:
-    - Spearheaded Artificial Intelligence efforts in the 577th of the DCGS.
-    - Advised and assisted teams on their AI and development efforts, helping teams accomplish their objectives.
-    - Designed team CI/CD system architecture and provided insights on best security practices throughout development.    
-    - Worked on multi‑disciplinary machine learning projects, such as Natural Language Processing, Computer Vision, and Regression prediction.
+    - Led artificial intelligence efforts for the 577th within the Distributed Common Ground System (DCGS), spanning natural language processing, computer vision, and regression modeling.
+    - Developed natural language processing models for a system designed to detect and remediate operational errors in real time.
+    - "Served as an internal AI consultancy for the organization: development teams across the unit brought their machine learning work to us for guidance on approach, model selection, and evaluation design."
+    - Designed the team's CI/CD system architecture and drove secure development practices throughout the software lifecycle.
+
 - employer: "Shadow Health"
   location: "Gainesville, FL"
   role: "Game Developer"
@@ -25,6 +27,3 @@
   end: "Feb 2021"
   details:
     - Orchestrated the development of multiple high‑fidelity 3D simulations for nursing colleges in over 1,800 programs worldwide.
-    - Developed in‑house tools for interdisciplinary teams that helped increase team production and streamlined designer workflow.
-    - Chaired meetings for maintaining and discussing code and system infrastructure for older and newer simulations.
-    - Collaborated with large cross‑interdisciplinary teams to communicate, build, and maintain features.

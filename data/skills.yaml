@@ -1,0 +1,8 @@
+- category: "Reverse Engineering"
+  items: "IDA Pro, Ghidra, Binary Ninja, GDB, x86‑64 / ARM / MIPS, ELF and PE internals"
+- category: "Vulnerability Research"
+  items: "AFL++, Unicorn, angr, fuzzing harness design, symbolic execution, penetration testing, malware analysis"
+- category: "Machine Learning"
+  items: "PyTorch, HuggingFace Transformers, PEFT (LoRA / QLoRA), supervised fine-tuning, evaluation design"
+- category: "Languages & Infrastructure"
+  items: "C, C++, Python, x86‑64 assembly, CI/CD architecture, Docker, single-GPU and cloud GPU training"

@@ -1,0 +1,14 @@
+- name: "Flare-On 12"
+  date: "2025"
+  detail: "Solved all challenges; top 100 finish"
+  org: "Mandiant"
+
+- name: "NSA Codebreaker Challenge"
+  date: "2025"
+  detail: "High Performer, solved all but one task"
+  org: "NSA"
+
+- name: "NSA Codebreaker Challenge"
+  date: "2022"
+  detail: "High Performer, solved all but one task; published full writeups"
+  org: "NSA"

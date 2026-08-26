@@ -2,8 +2,8 @@
 title: "NSACodebreaker2022 - Task8"
 topic: "general"
 tags: ["reverse-engineering", "cryptography"]
-prev: "http://andrewromans.com/posts/nsacodebreaker2022-task7"
-next: "http://andrewromans.com/posts/nsacodebreaker2022-task9"
+prev: "/posts/nsacodebreaker2022-task7/"
+next: "/posts/nsacodebreaker2022-task9/"
 date: 2022-12-20T11:37:37-05:07
 ---
 

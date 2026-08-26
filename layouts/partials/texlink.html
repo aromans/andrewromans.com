@@ -1,0 +1,11 @@
+{{- /* Convert a markdown link "[Text](https://url)" from data/*.yaml into
+       \href{https://url}{Text}. Plain text with no link is escaped instead.
+       URLs are passed through unescaped, so avoid % and # in them. */ -}}
+{{- $s := . -}}
+{{- $out := "" -}}
+{{- if findRE "\\[.*?\\]\\(.*?\\)" $s -}}
+  {{- $out = replaceRE "\\[(.*?)\\]\\((.*?)\\)" "\\href{$2}{$1}" $s -}}
+{{- else -}}
+  {{- $out = partial "texesc.html" $s -}}
+{{- end -}}
+{{- return $out -}}

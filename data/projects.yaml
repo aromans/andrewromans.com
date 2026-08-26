@@ -1,0 +1,25 @@
+- name: "Perseus"
+  link: "[Perseus](https://github.com/aromans/Perseus)"
+  role: "Automated Malware Deobfuscation via LLM Fine-Tuning — M.S. Capstone, Georgia Tech"
+  tools: "May 2026"
+  details:
+    - Built an end-to-end pipeline that generates verifiable deobfuscation tasks with programmatic ground truth using Tigress obfuscation (mixed boolean arithmetic, control flow flattening, virtualization) over the 1M-program AnghaBench corpus, compiled to x86‑64 ELF, disassembled per-function against the .symtab and .dynsym symbol tables, and paired with clean-assembly targets.
+    - Fine-tuned four code LLMs with QLoRA on a single H100.
+    - Validated against a Flare-On 12 challenge binary - fine-tuned models collapsed an 18-instruction obfuscated sequence from a Windows PE down to 5 correct instructions, on an unseen binary, executable format, and obfuscator, where the base models failed to produce assembly at all.
+    - Diagnosed the virtualization failure mode as a context-length limit that drove the model to a degenerate fixed-length output regardless of input, and identified control-flow-graph-conditioned input as the fix, a direction confirmed by independently published work.
+    - Designed the evaluation, including a normalization pass for position-dependent operands, after finding that the surface metric was penalizing semantically correct output.
+
+- name: "BSidesSD 2026 Hardware Hacking CTF"
+  link: "[Repository](https://github.com/aromans/Bsides2026)"
+  role: "Design and firmware"
+  tools: "Apr 2026"
+  details:
+    - Created an introductory hardware hacking CTF on an rp2040.
+    - Taught UART/SPI protocols, logic analyzer squashfs extraction, EMFI glitching, and more.
+
+- name: "DEF CON Badge"
+  link: "Independent"
+  role: "Hardware design and firmware (In progress for DC 35)"
+  tools: "Aug 2026 - Present"
+  details:
+    - Designing and building an electronic badge with embedded CTF challenges.

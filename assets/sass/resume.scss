@@ -210,6 +210,12 @@
         font-size: 0.8em;
       }
 
+      .note {
+        font-size: 0.8em;
+        margin: 0.2em 0 0.4em;
+        color: #9a9b9d;
+      }
+
     }
 
   }
@@ -236,6 +242,21 @@
       float: right;
     }
     color: #c9cacc;
+  }
+
+  .skills {
+    .row {
+      margin-bottom: 0.35em;
+    }
+
+    .description {
+      float: none;
+      margin-right: 0;
+    }
+
+    strong {
+      color: #8938e0;//rgb(182,38,44);
+    }
   }
 
   .clearances {

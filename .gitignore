@@ -1,0 +1,18 @@
+# Temporary: job posting saved locally for reference, not part of the site
+job_posting.html
+
+# Hugo build artifacts
+/public/
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Resume build output (generated from data/*.yaml)
+/build/
+
+# Claude Code project-local settings and session data
+.claude/
+
+# Windows/WSL alternate data stream artifacts
+*:Zone.Identifier

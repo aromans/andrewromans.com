@@ -1,0 +1,17 @@
+{{- /* Escape LaTeX special characters in prose coming from data/*.yaml.
+       Uses `return` so the result is a plain string; without it the output is
+       treated as HTML and "&" comes back as "&amp;".
+       Backslashes and braces are deliberately NOT escaped: résumé copy never
+       contains them, and escaping them safely would require placeholder
+       round-tripping. Also normalizes the non-breaking hyphen (U+2011) to a
+       plain hyphen, which XeLaTeX's font may not carry. */ -}}
+{{- $s := . -}}
+{{- $s = replace $s "&" "\\&" -}}
+{{- $s = replace $s "%" "\\%" -}}
+{{- $s = replace $s "$" "\\$" -}}
+{{- $s = replace $s "#" "\\#" -}}
+{{- $s = replace $s "_" "\\_" -}}
+{{- $s = replace $s "~" "\\textasciitilde{}" -}}
+{{- $s = replace $s "^" "\\textasciicircum{}" -}}
+{{- $s = replace $s "‑" "-" -}}
+{{- return $s -}}

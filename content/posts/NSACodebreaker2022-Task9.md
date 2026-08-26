@@ -2,7 +2,7 @@
 title: "NSACodebreaker2022 - Task9"
 topic: "general"
 tags: ["cryptanalysis", "software-development"]
-prev: "http://andrewromans.com/posts/nsacodebreaker2022-task8"
+prev: "/posts/nsacodebreaker2022-task8/"
 date: 2022-12-20T11:37:37-05:08
 ---
 
