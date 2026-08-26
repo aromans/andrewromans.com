@@ -4,7 +4,7 @@ title: Andrew Romans
 theme: simple
 
 params:
-  status: In May of this year I graduate with my M.S. in Cybersecurity at Georgia Tech. My capstone, Perseus, fine-tunes code LLMs to automatically deobfuscate malware; my write-up is available along with links to my paper and source code.
+  status: In May of this year I graduated with my M.S. in Cybersecurity at Georgia Tech. My capstone, Perseus, fine-tunes code LLMs to automatically deobfuscate malware; my write-up is available along with links to my paper and source code.
   status_p2: I am currently building an electronic badge for DEF CON 2027 and preparing for Flare-On 13 in September.
   links:
     Home:   /
